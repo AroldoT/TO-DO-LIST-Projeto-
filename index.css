@@ -1,0 +1,128 @@
+body, h1, ul, li, button, input {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+body {
+  background-color: rgb(35, 35, 35);
+}
+
+.container {
+  margin-top: 10vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background: radial-gradient(circle, rgba(205,219,22,1) 0%, rgba(9,231,57,1) 60%);
+  gap: 10px;
+  animation: fadeIn 0.5s ease-in-out;
+  width: 500px;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 5px 5px 15px grey;
+  }
+
+h1 {
+  font-family: philosopher;
+  font-size: 4rem;
+  padding: 1rem;
+  color: #7f3500;
+}
+
+input {
+  border-style:double;
+  border: 2px solid ;
+  border-radius: 3px;
+  width: 300px;
+  height: 5vh;
+  font-size: larger;
+  border-color: rgb(145, 145, 145);
+  background-color: rgba(119, 119, 119, 0.267);
+}
+
+input::placeholder {
+  color: #7f3500;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+input:focus-visible {
+  outline-style: none;
+}
+
+button {
+  border: 2px solid rgba(119, 119, 119, 0.267);
+  border-radius: 3px;
+  background-color: rgb(230, 16, 80);
+  color: white;
+  padding: 0.3rem 1.5rem;
+  font-size: 20px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.616);
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+button:hover {
+  background-color: rgb(206, 19, 75);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  background-color: rgba(9,231,57,1) 60%;
+}
+
+li {
+  margin-bottom: 10px;
+  padding: 0 15px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s;
+  color: chocolate;
+  font-size: 1.5rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  height: 50px;
+  width: 300px;
+}
+
+li.completed {
+  text-decoration: line-through;
+  color: #aaa;
+}
+
+button.delete-btn {
+  background-color: green;
+  color: chocolate;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: medium;
+  font-weight: bold;
+  box-shadow: none;
+  transition: background-color 0.3s;
+}
+
+button.delete-btn:hover {
+  background-color: rgb(2, 102, 2);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
