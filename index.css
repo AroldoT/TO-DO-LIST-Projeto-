@@ -9,22 +9,51 @@ body, h1, ul, li, button, input {
 
 body {
   background-color: rgb(35, 35, 35);
+  display: grid;
+  grid-template-columns: 210px 1fr;
+  justify-items: center;
+}
+
+aside {
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: chartreuse;
+  box-shadow: 0 0 10px white;
+  height: 100vh;
+  padding: 0 2rem;
+  border-radius: 10px;
+}
+
+aside > h2 {
+  text-decoration: none;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 21px;
+  font-weight: 100;
+  color: #7f3500;
+}
+
+aside > h2:hover {
+  color: #5a2702;
+  text-shadow: 2px 2px 5px rgb(75, 75, 75);
+  cursor: pointer;
 }
 
 .container {
-  margin-top: 10vh;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-column-start: 2;
+  justify-items: center;
+  margin-top: 3%;
   justify-content: center;
   align-items: center;
   padding: 1rem;
   background: radial-gradient(circle, rgba(205,219,22,1) 0%, rgba(9,231,57,1) 60%);
   gap: 10px;
-  animation: fadeIn 0.5s ease-in-out;
   width: 500px;
   height: auto;
   border-radius: 15px;
   box-shadow: 5px 5px 15px grey;
+  animation: fadeIn 0.5s ease-in-out;
   }
 
 h1 {
